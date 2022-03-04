@@ -15,6 +15,8 @@ import java.util.Scanner;
 
 public class Puck extends Disk {
 	
+	private static String puckString;
+
 	public Puck(double r, double t) {
 		super(r, t);
 	}
@@ -41,6 +43,7 @@ public class Puck extends Disk {
 	public static void getWeight(double weight) {
 		
 		System.out.println(weight + " ounces.");
+		equals(puckString);
 		if (weight < 5.5) {
 			if (weight > 5) {
 				getDivision(false, true);
@@ -58,9 +61,13 @@ public class Puck extends Disk {
 		
 		System.out.println("Is the puck standard weight? " + standard);
 		System.out.println("Is the puck youth weight? " + youth);
+		System.exit(0);
+
  	}
 	
-	public static void equals() {
+	public static void equals(String puckString) {
+		
+		System.out.println(puckString);
 		
 	}
 	
@@ -68,8 +75,8 @@ public class Puck extends Disk {
 		
 		Disk puck = new Disk(1.5, 1);
 		String puckString;
-		puckString = "Diameter: " + puck.getRadius()*2 + " inches." + 
-				"Thickness: " + puck.getThickness() + " inches.";
+		puckString = "Diameter equals: " + puck.getRadius()*2 + " inches." + 
+				"Thickness equals: " + puck.getThickness() + " inches.";
 		return puckString;
 	}
 }
@@ -78,12 +85,10 @@ public class Puck extends Disk {
 /* Screen Dump
  
 	Weight of puck:
-	2
-	2.0 ounces.
-	Is the puck standard weight? false
+	5.2
+	5.2 ounces.
+	
+	Is the puck standard weight? true
 	Is the puck youth weight? false
-	Diameter: 3.0 inches.
-	Thickness: 1.0 inches.
 
  */
-
