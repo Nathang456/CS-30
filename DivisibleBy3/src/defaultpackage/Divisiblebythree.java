@@ -1,3 +1,18 @@
+/*
+
+Program: Eclipse.java          Last Date of this Revision: February 22, 2022
+
+Purpose: Create a DivisibleBy3 application that prompts the user for an integer
+and then displays a message when Check is clicked indicating whether the number 
+is divisible by 3.
+
+Author: Nathaniel Gatus, 
+School: CHHS
+Course: Computer Programming 30
+ 
+
+*/
+
 package defaultpackage;
 
 import java.awt.BorderLayout;
