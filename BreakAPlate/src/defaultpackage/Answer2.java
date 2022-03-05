@@ -1,3 +1,17 @@
+/*
+
+Program: Eclipse.java          Last Date of this Revision: February 22, 2022
+
+Purpose: Modify the BreakAPlate application to display a picture of the prize 
+won rather than text naming the prize.
+
+Author: Nathaniel Gatus, 
+School: CHHS
+Course: Computer Programming 30
+ 
+
+*/
+
 package defaultpackage;
 
 import java.awt.BorderLayout;
