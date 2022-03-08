@@ -1,0 +1,6 @@
+GUI stands for graphical user interface. It allows the user to more easily access information, through the use of visuals and audio instead of relying only on text.
+In an event driven application, code is executed by direct user actions, such as the click of a button.
+Components are added to the content pane, which is the part of the frame that holds visual information. In this way, components can be directly added to a frame.
+An action listener can be used with a JLabel in order to respond to events.
+Invoking swing objects from multiple threads risks thread interference so to avoid this an event-dispatching thread is used.
+A label contains information such as text or a picture and a button triggers an event.
