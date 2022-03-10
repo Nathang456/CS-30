@@ -1,2 +1,4 @@
 1. An is-a relationship refers to inheritance, which is when a child class uses information from a parent class. In a has-a relationship an instance of one class has a reference to an instance of another class.
-2. 
+2. A derived class will have its own methods as well as the methods from its base class at its disposal. If the base class has a public method go(), and the derived class has a public method stop(), then an object of the derived class can use methods go() and stop().
+3. An abstract method is not implemented within the super-class, it is inherited by the derived class and used as detailed in the super-class. An overridden method is implemented by the super-class, and is then changed by the derived class before being implemented.
+4. An interface 
