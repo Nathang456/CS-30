@@ -9,7 +9,7 @@ Course: Computer Programming 30
  
 */
 
-public class Vehicle {
+abstract class Vehicle {
 	
 	String licensePlate;
 	String brand;
