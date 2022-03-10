@@ -1,1 +1,2 @@
-
+1. An is-a relationship refers to inheritance, which is when a child class uses information from a parent class. In a has-a relationship an instance of one class has a reference to an instance of another class.
+2. 
