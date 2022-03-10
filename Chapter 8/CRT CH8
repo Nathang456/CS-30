@@ -8,5 +8,5 @@
    d) doThat(), doThis(), doNow().  
    e) The implementation of doThis() in Roo overrides the implementation of doThis() in Bo.
    f) The statement super() calls the parent constructor in Java.
-   g) 
-   h) Roo has inherited all the methods from Bo and can therefore use doThis() in one of its own methods.
+   g) First you would need to create a new object in this way: "Roo object = new Roo();". Then you could use code similar to this to call the method: "object.doThis();".
+   h) After creating the Roo method, you could type this inside of the method brackets to call the doThis method: "doThis();".
