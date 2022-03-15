@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 /*
 
 Program: Eclipse.java          Last Date of this Revision: March 7, 2022
@@ -12,43 +10,33 @@ Course: Computer Programming 30
 */
 
 public class Staff extends UEmployee{
+	
+	static String jobTitle;
 
 	public Staff(String name, double salary) {
 		
 		super(name, salary);
 	}
-
+	
 	public static void main (String[] args) {
+
+		String name = "Zeke Rodriguez";
+		double salary = 40;
 		
-		Faculty prof = new Faculty ("Chemistry Professor", 40);
-		Faculty jan = new Faculty ("University Janitor", 40);
-		Faculty assistant = new Faculty ("Staff Assistant", 40);
+		UEmployee Zeke = new UEmployee (name, salary);
 		
-		ArrayList<UEmployee> arr = new ArrayList<UEmployee>();
-		arr.add(prof);
-		arr.add(jan);
-		arr.add(assistant);
-		
-		System.out.println(prof);
-		System.out.println("");
-		System.out.println(jan);
-		System.out.println("");
-		System.out.println(assistant);
-		System.out.println("");
+		jobTitle = "Chemistry Professor";
+		System.out.println(Zeke + ", " + jobTitle);
 	}
 	
 	public String toString() {
 		
-		return(getName());
+		return(getName() + ", " + getSalary() + " dollars per hour");
 	}
 }
 
 /* Screen Dump
 
-Chemistry Professor
-
-University Janitor
-
-Staff Assistant
+Zeke Rodriguez, 40.0 dollars per hour, Chemistry Professor
 
 */
