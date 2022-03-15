@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 /*
 
 Program: Eclipse.java          Last Date of this Revision: March 7, 2022
@@ -24,21 +22,13 @@ public class UEmployee{
 
 	public static void main (String[] args) {
 		
-		UEmployee Zeke = new UEmployee ("Zeke Rodriguez", 40);
-		UEmployee Amanda = new UEmployee ("Amanda Smith", 40);
-		UEmployee Joshua = new UEmployee ("Joshua Khamzat", 40);
+		String name = "Zeke Rodriguez";
+		double salary = 40;
 		
-		ArrayList<UEmployee> arr = new ArrayList<UEmployee>();
-		arr.add(Zeke);
-		arr.add(Amanda);
-		arr.add(Joshua);
+		UEmployee Zeke = new UEmployee (name, salary);
 		
 		System.out.println(Zeke);
-		System.out.println("");
-		System.out.println(Amanda);
-		System.out.println("");
-		System.out.println(Joshua);
-		System.out.println("");
+
 	}
 	
 	public String toString() {
@@ -66,9 +56,5 @@ public class UEmployee{
 /* Screen Dump
 
 Zeke Rodriguez, 40.0 dollars per hour
-
-Amanda Smith, 40.0 dollars per hour
-
-Joshua Khamzat, 40.0 dollars per hour
 
 */
