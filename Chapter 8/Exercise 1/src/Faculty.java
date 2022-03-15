@@ -13,16 +13,16 @@ Course: Computer Programming 30
 
 public class Faculty extends UEmployee{
 
-	public Faculty(String name, String salary) {
+	public Faculty(String name, double salary) {
 		
 		super(name, salary);
 	}
 
 	public static void main (String[] args) {
 		
-		Faculty bio = new Faculty ("Biological Sciences Department", "");
-		Faculty chem = new Faculty ("Chemical Engineering Department", "");
-		Faculty comp = new Faculty ("Computer Science Department", "");
+		Faculty bio = new Faculty ("Biological Sciences Department", 0);
+		Faculty chem = new Faculty ("Chemical Engineering Department", 0);
+		Faculty comp = new Faculty ("Computer Science Department", 0);
 		
 		ArrayList<UEmployee> arr = new ArrayList<UEmployee>();
 		arr.add(bio);
@@ -39,7 +39,7 @@ public class Faculty extends UEmployee{
 	
 	public String toString() {
 		
-		return(name);
+		return(getName());
 	}
 }
 
