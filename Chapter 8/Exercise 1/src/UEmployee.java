@@ -13,20 +13,20 @@ Course: Computer Programming 30
 
 public class UEmployee{
 
-	String name;
-	String salary;
+	private String name;
+	private double salary;
 
-	public UEmployee(String name, String salary) {
+	public UEmployee(String name, double salary) {
 		
-		this.name = name;
-		this.salary = salary;
+		this.setName(name);
+		this.setSalary(salary);
 	}
 
 	public static void main (String[] args) {
 		
-		UEmployee Zeke = new UEmployee ("Zeke Rodriguez", "40 dollars per hour");
-		UEmployee Amanda = new UEmployee ("Amanda Smith", "40 dollars per hour");
-		UEmployee Joshua = new UEmployee ("Joshua Khamzat", "40 dollars per hour");
+		UEmployee Zeke = new UEmployee ("Zeke Rodriguez", 40);
+		UEmployee Amanda = new UEmployee ("Amanda Smith", 40);
+		UEmployee Joshua = new UEmployee ("Joshua Khamzat", 40);
 		
 		ArrayList<UEmployee> arr = new ArrayList<UEmployee>();
 		arr.add(Zeke);
@@ -43,17 +43,32 @@ public class UEmployee{
 	
 	public String toString() {
 		
-		return(name + ", " + salary);
+		return(getName() + ", " + getSalary() + " dollars per hour");
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public double getSalary() {
+		return salary;
+	}
+
+	public void setSalary(double salary) {
+		this.salary = salary;
 	}
 }
 
 /* Screen Dump
 
-Zeke Rodriguez, 40 dollars per hour
+Zeke Rodriguez, 40.0 dollars per hour
 
-Amanda Smith, 40 dollars per hour
+Amanda Smith, 40.0 dollars per hour
 
-Joshua Khamzat, 40 dollars per hour
+Joshua Khamzat, 40.0 dollars per hour
 
 */
-
