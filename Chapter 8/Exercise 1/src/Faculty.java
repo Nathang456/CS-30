@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 /*
 
 Program: Eclipse.java          Last Date of this Revision: March 7, 2022
@@ -13,6 +11,8 @@ Course: Computer Programming 30
 
 public class Faculty extends UEmployee{
 
+	static String department;
+	
 	public Faculty(String name, double salary) {
 		
 		super(name, salary);
@@ -20,35 +20,23 @@ public class Faculty extends UEmployee{
 
 	public static void main (String[] args) {
 		
-		Faculty bio = new Faculty ("Biological Sciences Department", 0);
-		Faculty chem = new Faculty ("Chemical Engineering Department", 0);
-		Faculty comp = new Faculty ("Computer Science Department", 0);
+		String name = "Zeke Rodriguez";
+		double salary = 40;
 		
-		ArrayList<UEmployee> arr = new ArrayList<UEmployee>();
-		arr.add(bio);
-		arr.add(chem);
-		arr.add(comp);
+		UEmployee Zeke = new UEmployee (name, salary);
 		
-		System.out.println(bio);
-		System.out.println("");
-		System.out.println(chem);
-		System.out.println("");
-		System.out.println(comp);
-		System.out.println("");
+		department = "Chemistry Department";
+		System.out.println(Zeke + ", " + department);
 	}
 	
 	public String toString() {
 		
-		return(getName());
+		return(getName() + ", " + getSalary() + " dollars per hour");
 	}
 }
 
 /* Screen Dump
 
-Biological Sciences Department
-
-Chemical Engineering Department
-
-Computer Science Department
+Zeke Rodriguez, 40.0 dollars per hour, Chemistry Department
 
 */
