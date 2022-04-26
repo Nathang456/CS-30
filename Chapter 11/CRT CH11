@@ -1,0 +1,12 @@
+Most data is kept in temporary files stored in random access memory
+import java.io.File
+This file url does not contain the file path
+a) try {
+} catch (Exception e) {
+e.printStackTrace();} 
+b)  try {
+} catch (IOException e) {
+System.out.println(“File name can not be used.”);
+e.printStackTrace();}
+a) The standard error stream (System.err)
+b) In the console
