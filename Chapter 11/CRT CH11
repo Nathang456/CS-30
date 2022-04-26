@@ -2,11 +2,11 @@
 2. import java.io.File
 3. This file url does not contain the file path
 4. a) try {
-   } catch (Exception e) {
-   e.printStackTrace();} 
-   b)  try {
-   } catch (IOException e) {
-   System.out.println(“File name can not be used.”);
-   e.printStackTrace();}
-   a) The standard error stream (System.err)
+      } catch (Exception e) {
+      e.printStackTrace();} 
+   b) try {
+      } catch (IOException e) {
+      System.out.println(“File name can not be used.”);
+      e.printStackTrace();}
+5. a) The standard error stream (System.err)
    b) In the console
