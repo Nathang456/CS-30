@@ -4,8 +4,11 @@
 4. for(int i=0;i<length;i++){
       System.out.println(grades[i]);
    }
-5. a)  
-   b)
+5. a) int[] array1 = (5, 6, 9); 
+      ArrayList <Integer> MyArray = new ArrayList <Integer> (Arrays.asList(array1));
+      MyArray.add(8);
+      array1 = MyArray.toArray(array1);
+   b) 
 6. When you use a single element from another method’s array, you need to use the array name as well as the index. When you pass an entire array, you just need the array name.
 7. In java, indexes usually start at zero. If your program must track the location of each element, it may be easier to set the index to a starting number of one, so that the first element in the array is labeled one instead of zero.
 8. Elai
